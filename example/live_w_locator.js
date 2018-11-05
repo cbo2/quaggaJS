@@ -25,6 +25,7 @@ $(function() {
         init: function() {
             var self = this;
 
+            console.log("====== init =====");
             Quagga.init(this.state, function(err) {
                 if (err) {
                     return self.handleError(err);
