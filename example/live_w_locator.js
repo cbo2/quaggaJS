@@ -248,7 +248,8 @@ $(function() {
                 readers : [{
                     format: "code_128_reader",
                     config: {}
-                }]
+                }],
+                multiple: false
             },
             locate: true
         },
