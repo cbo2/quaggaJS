@@ -243,7 +243,7 @@ $(function() {
                 halfSample: true
             },
             numOfWorkers: 2,
-            frequency: 10,
+            frequency: 5,
             decoder: {
                 readers : [{
                     format: "code_128_reader",
@@ -269,7 +269,7 @@ $(function() {
                 result.boxes.filter(function (box) {
                     return box !== result.box;
                 }).forEach(function (box) {
-                    Quagga.ImageDebug.drawPath(box, {x: 0, y: 1}, drawingCtx, {color: "purple", lineWidth: 2});
+                    Quagga.ImageDebug.drawPath(box, {x: 0, y: 1}, drawingCtx, {color: "green", lineWidth: 2});
                 });
             }
 
