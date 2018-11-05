@@ -259,6 +259,7 @@ $(function() {
     Quagga.onProcessed(function(result) {
         var drawingCtx = Quagga.canvas.ctx.overlay,
             drawingCanvas = Quagga.canvas.dom.overlay;
+            console.log("Quagga.onProcessed.....");
 
         if (result) {
             if (result.boxes) {
@@ -266,7 +267,7 @@ $(function() {
                 result.boxes.filter(function (box) {
                     return box !== result.box;
                 }).forEach(function (box) {
-                    Quagga.ImageDebug.drawPath(box, {x: 0, y: 1}, drawingCtx, {color: "green", lineWidth: 2});
+                    Quagga.ImageDebug.drawPath(box, {x: 0, y: 1}, drawingCtx, {color: "purple", lineWidth: 2});
                 });
             }
 
